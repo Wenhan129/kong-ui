@@ -6,10 +6,10 @@ import Button, { ButtonType, ButtonSize } from "./components/Button/button";
 function App() {
   return (
     <div className="App">
-      <Button disabled autoFocus>
-        Hello World
+      <Button disabled>Hello World</Button>
+      <Button btnType={ButtonType.Primary} autoFocus>
+        Confirm
       </Button>
-      <Button btnType={ButtonType.Primary}>Confirm</Button>
       <Button btnType={ButtonType.Danger}>Alert</Button>
       <Button btnType={ButtonType.Default} autoFocus>
         Default
