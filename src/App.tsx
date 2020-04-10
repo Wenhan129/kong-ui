@@ -16,7 +16,7 @@ function App() {
       <Button btnType={ButtonType.Default} autoFocus>
         Default
       </Button>
-      <Menu defaultIndex={0} onSelect={(index) => alert(index)}>
+      <Menu mode="vertical" defaultIndex={0} onSelect={(index) => alert(index)}>
         <MenuItem index={0}>Cool Link1</MenuItem>
         <MenuItem index={1}>Cool Link2</MenuItem>
         <MenuItem index={2}>Cool Link3</MenuItem>
