@@ -1,9 +1,10 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./styles/index.scss";
-import Button, { ButtonType, ButtonSize } from "./components/Button/button";
+import Button, { ButtonType } from "./components/Button/button";
 import Menu from "./components/Menu/menu";
 import MenuItem from "./components/Menu/menuItem";
+import SubMenu from "./components/Menu/subMenu";
 
 function App() {
   return (
@@ -17,9 +18,14 @@ function App() {
         Default
       </Button>
       <Menu mode="vertical" defaultIndex={0} onSelect={(index) => alert(index)}>
-        <MenuItem index={0}>Cool Link1</MenuItem>
-        <MenuItem index={1}>Cool Link2</MenuItem>
-        <MenuItem index={2}>Cool Link3</MenuItem>
+        <MenuItem>Cool Link1</MenuItem>
+        <MenuItem>Cool Link2</MenuItem>
+        <SubMenu title="Cool">
+          <MenuItem>Cool SubMenu Link3</MenuItem>
+          <MenuItem>Cool SubMenu Link3</MenuItem>
+          <MenuItem>Cool SubMenu Link3</MenuItem>
+        </SubMenu>
+        <MenuItem>Cool Link3</MenuItem>
       </Menu>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
