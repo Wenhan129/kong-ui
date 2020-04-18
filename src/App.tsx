@@ -17,9 +17,24 @@ function App() {
       <Button btnType={ButtonType.Default} autoFocus>
         Default
       </Button>
-      <Menu mode="vertical" defaultIndex={0} onSelect={(index) => alert(index)}>
+      <Menu
+        mode="horizontal"
+        // defaultOpenSubMenus={["2", "3"]}
+        defaultIndex="0"
+        onSelect={(index) => alert(index)}
+      >
         <MenuItem>Cool Link1</MenuItem>
         <MenuItem>Cool Link2</MenuItem>
+        <SubMenu title="Cool">
+          <MenuItem>Cool SubMenu Link3</MenuItem>
+          <MenuItem>Cool SubMenu Link3</MenuItem>
+          <MenuItem>Cool SubMenu Link3</MenuItem>
+        </SubMenu>
+        <SubMenu title="Cool">
+          <MenuItem>Cool SubMenu Link3</MenuItem>
+          <MenuItem>Cool SubMenu Link3</MenuItem>
+          <MenuItem>Cool SubMenu Link3</MenuItem>
+        </SubMenu>
         <SubMenu title="Cool">
           <MenuItem>Cool SubMenu Link3</MenuItem>
           <MenuItem>Cool SubMenu Link3</MenuItem>
