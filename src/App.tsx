@@ -1,10 +1,14 @@
 import React from "react";
 import logo from "./logo.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import "./styles/index.scss";
 import Button, { ButtonType } from "./components/Button/button";
 import Menu from "./components/Menu/menu";
 import MenuItem from "./components/Menu/menuItem";
 import SubMenu from "./components/Menu/subMenu";
+library.add(fas);
 
 function App() {
   return (
